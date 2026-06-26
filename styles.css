@@ -1,0 +1,415 @@
+:root {
+  --ink: #16262f;
+  --ink-soft: #43545d;
+  --surface: #ffffff;
+  --paper: #f4f7f6;
+  --line: #d6e0df;
+  --teal: #2a807f;
+  --teal-dark: #1b5f62;
+  --gold: #f0b24b;
+  --blue: #2f5f8f;
+  --shadow: 0 18px 42px rgba(22, 38, 47, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 68px;
+  padding: 14px clamp(18px, 4vw, 56px);
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(214, 224, 223, 0.86);
+  backdrop-filter: blur(18px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--teal);
+  color: #fff;
+  font-size: 0.88rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2vw, 28px);
+  font-size: 0.94rem;
+}
+
+nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--teal-dark);
+}
+
+.hero {
+  min-height: 86vh;
+  display: flex;
+  align-items: center;
+  padding: 118px clamp(20px, 6vw, 92px) 72px;
+  background-image: linear-gradient(90deg, rgba(8, 24, 34, 0.72), rgba(8, 24, 34, 0.24) 54%, rgba(8, 24, 34, 0.04)),
+    url("assets/medical-path-hero.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.hero-content {
+  width: min(660px, 100%);
+  padding-top: 20px;
+}
+
+.eyebrow,
+.section-kicker {
+  margin: 0 0 14px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0 0 20px;
+  font-size: 4.25rem;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.hero-copy {
+  max-width: 620px;
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.91);
+  font-size: 1.18rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button.primary {
+  background: var(--gold);
+  color: #15242d;
+}
+
+.button.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.64);
+  color: #fff;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.section {
+  padding: 76px clamp(20px, 4vw, 56px);
+  background: var(--surface);
+}
+
+.section-light {
+  background: var(--paper);
+}
+
+.container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.two-column,
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  gap: clamp(30px, 5vw, 72px);
+  align-items: start;
+}
+
+h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 2.1rem;
+  line-height: 1.16;
+}
+
+h3 {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+p {
+  margin: 0;
+}
+
+.profile-copy {
+  display: grid;
+  gap: 18px;
+  color: var(--ink-soft);
+  font-size: 1.02rem;
+}
+
+.section-heading {
+  max-width: 780px;
+  margin-bottom: 34px;
+}
+
+.section-heading.compact {
+  margin-bottom: 22px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.category-card {
+  min-height: 208px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.category-card:nth-child(2) {
+  border-top: 4px solid var(--teal);
+}
+
+.category-card:nth-child(3) {
+  border-top: 4px solid var(--blue);
+}
+
+.category-card:nth-child(4) {
+  border-top: 4px solid var(--gold);
+}
+
+.category-card p,
+.muted,
+.fine-print {
+  color: var(--ink-soft);
+}
+
+.section-contact {
+  background: #e8f0ef;
+}
+
+.contact-panel {
+  display: block;
+  padding: 30px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  font-style: normal;
+}
+
+.contact-panel dl {
+  display: grid;
+  gap: 22px;
+  margin: 0;
+}
+
+.contact-panel div {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 18px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px;
+}
+
+.contact-panel div:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.contact-panel dt {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-panel dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-panel a {
+  color: var(--teal-dark);
+  font-weight: 700;
+}
+
+.source-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.source-list li {
+  padding: 18px 20px;
+  border-left: 4px solid var(--teal);
+  background: #fff;
+}
+
+.source-list a {
+  color: var(--teal-dark);
+  font-weight: 700;
+}
+
+.fine-print {
+  margin-top: 18px;
+  font-size: 0.93rem;
+}
+
+.site-footer {
+  padding: 26px clamp(20px, 4vw, 56px);
+  background: var(--ink);
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-inner a {
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .site-header {
+    position: absolute;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    min-height: 82vh;
+    padding-top: 150px;
+    background-position: center right 42%;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .two-column,
+  .contact-layout,
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .site-header {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hero {
+    min-height: 80vh;
+    padding: 162px 20px 54px;
+    background-image: linear-gradient(90deg, rgba(8, 24, 34, 0.86), rgba(8, 24, 34, 0.58) 62%, rgba(8, 24, 34, 0.2)),
+      url("assets/medical-path-hero.png");
+    background-position: 68% center;
+  }
+
+  .hero h1 {
+    font-size: 2.52rem;
+  }
+
+  .hero-copy {
+    font-size: 1.04rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .section {
+    padding: 54px 20px;
+  }
+
+  h2 {
+    font-size: 1.72rem;
+  }
+
+  .contact-panel {
+    padding: 22px;
+  }
+
+  .contact-panel div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+}
