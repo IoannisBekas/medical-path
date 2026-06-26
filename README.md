@@ -19,6 +19,8 @@ Then open `http://127.0.0.1:8765/`.
 - `index.html` - Greek homepage
 - `styles.css` - responsive styling
 - `assets/` - local location graphic and favicon
+- `robots.txt` - crawler rules
+- `sitemap.xml` - sitemap for the published GitHub Pages URL
 - `IMPROVEMENT_PLAN_EL.md` - detailed improvement plan
 
 ## Public Sources
