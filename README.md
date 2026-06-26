@@ -18,10 +18,14 @@ Then open `http://127.0.0.1:8765/`.
 
 - `index.html` - Greek homepage
 - `styles.css` - responsive styling
-- `assets/` - local location graphic and favicon
+- `assets/` - local hero photo, location graphic and favicon
 - `robots.txt` - crawler rules
 - `sitemap.xml` - sitemap for the published GitHub Pages URL
 - `IMPROVEMENT_PLAN_EL.md` - detailed improvement plan
+
+## Asset Notes
+
+- Hero photo: Unsplash photo by Árpád Czapp, used as a representative medical-supplies visual, not as a photo of the Medical Path premises.
 
 ## Public Sources
 
