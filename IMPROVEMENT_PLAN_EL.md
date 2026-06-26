@@ -19,8 +19,8 @@
   - Static website χωρίς framework.
 - Κύρια αρχεία:
   - `index.html`: μονοσέλιδο website, πλέον με ελληνικό περιεχόμενο.
-  - `styles.css`: responsive layout, hero section, cards, contact panel.
-  - `assets/medical-path-hero.png`: τοπική εικόνα hero.
+  - `styles.css`: responsive layout, hero section, στοιχεία επικοινωνίας και πίνακες πληροφοριών.
+  - `assets/glyfada-location.svg`: απλό σχηματικό location visual.
   - `assets/favicon.svg`: τοπικό favicon.
 - Entrypoint:
   - `index.html` στη ρίζα του repository.
@@ -80,7 +80,7 @@
 2. Επιβεβαίωση επίσημης επωνυμίας, ΑΦΜ, ΓΕΜΗ, διεύθυνσης, τηλεφώνων και email.
 3. Προσθήκη πραγματικού ωραρίου λειτουργίας, αν επιβεβαιωθεί.
 4. Προσθήκη χάρτη ή link προς Google Maps.
-5. Βελτίωση hero με πραγματική φωτογραφία καταστήματος ή επαγγελματικό product/service visual.
+5. Αντικατάσταση του σχηματικού location visual με πραγματική φωτογραφία καταστήματος, αν υπάρχει διαθέσιμη και επιτρέπεται η χρήση της.
 
 ### Φάση 2: Εμπορική δομή
 
@@ -164,7 +164,7 @@
 ## Πρώτο πρακτικό backlog
 
 1. Επιβεβαίωση στοιχείων εταιρείας.
-2. Αντικατάσταση generated hero με πραγματική φωτογραφία ή branded visual.
+2. Αντικατάσταση του σχηματικού location visual με πραγματική φωτογραφία ή επίσημο branded visual.
 3. Προσθήκη Google Maps link.
 4. Προσθήκη `sitemap.xml`, `robots.txt` και structured data.
 5. Δημιουργία 4-6 landing sections για τις βασικές κατηγορίες προϊόντων.

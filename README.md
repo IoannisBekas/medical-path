@@ -18,7 +18,7 @@ Then open `http://127.0.0.1:8765/`.
 
 - `index.html` - Greek homepage
 - `styles.css` - responsive styling
-- `assets/` - local hero image and favicon
+- `assets/` - local location graphic and favicon
 - `IMPROVEMENT_PLAN_EL.md` - detailed improvement plan
 
 ## Public Sources
